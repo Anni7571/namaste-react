@@ -1,5 +1,7 @@
-// Printing nested tags
+import React from "react";
+import ReactDOM from "react-dom/client";
 
+// Printing nested tags
 {
     /* <h1 id="heading" class="heading">Namaste bhaiyon.</h1> */
 }
@@ -62,15 +64,16 @@
 </div>; */
 }
 // 👇
-// const parent = React.createElement("div", { id: "parent" }, [
-//     React.createElement("div", { id: "child1" }, [
-//         React.createElement("h1", { id: "head1" }, "I'm h1 tag"),
-//         React.createElement("h2", { id: "head2" }, "I'm h2 tag"),
-//     ]),
-//     React.createElement("div", { id: "child2" }, [
-//         React.createElement("h1", { id: "head1" }, "I'm h1 tag"),
-//         React.createElement("h2", { id: "head2" }, "I'm h2 tag"),
-//     ]),
-// ]);
-// const root = ReactDOM.createRoot(document.getElementById("root"));
+const parent = React.createElement("div", { id: "parent" }, [
+    React.createElement("div", { id: "child1" }, [
+        React.createElement("h1", { id: "head1" }, "I'm Aniruddh Singh"),
+        React.createElement("h2", { id: "head2" }, "I'm Aniruddh Singh"),
+    ]),
+    React.createElement("div", { id: "child2" }, [
+        React.createElement("h1", { id: "head1" }, "I'm Namaste React"),
+        React.createElement("h2", { id: "head2" }, "I'm Namaste Javascript44"),
+    ]),
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent);
